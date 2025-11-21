@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--1. metadatos-->
+<meta charset="UTF-8">
+<meta name="description" content="Ancianas LOL, la ayuda de la gente mayor">
+<meta name="keywords" content="la fundacion ancianas lol, ayuda a aquellas personas mayores con problemas de piermas y brazos">
+<meta name="author" content="Bryan Carranza">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--2,titulo de la pagina que aparece en el buscador-->
+<title>ANCIANAS LOL</title>
+<!--3. Enlace al achivo CSS-->
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/STYLE.CSS">
+</head>
+<!--hasta aca va el head-->    
+<body>
+    <header class="header">
+        <div class="container header-inner">
+        <a class="logo" href="#">
+<img src="IMG/logo.jpeg" alt="Ancianas LOL| " height="120" />
+        </a>
+    
+    
+    <nav class="inicio">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nostros">Nostros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a class="btn-dona" href="#donar">Donar</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+
+<main>
+  <!--Hero con video-->
+    <section class="hero video-hero">
+      <video class="hero-video" id="heroVideo" loop playsinline>
+        <source src="IMG/invideo-ai-1080 Where Kindness Lives_ AL Care in Mexico 2025-11-11 (1).mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <h2>Cada peso deja una huella</h2>
+          <p>La salud transforma vidas. Acompáñanos a abrir puertas hacia un futuro lleno de oportunidades.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdL8NWif8j6ImVvzD6Jn3BeomlA60y8DLcXcVKQtUNesWy1Ag/viewform?usp=dialog">Dona</a>
+            <a class="btn outline" href="#voluntariado">Sé parte</a>
+          </div>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">+224.000</div>
+            <div class="stat-label">Niños beneficiados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+12.000</div>
+            <div class="stat-label">Docentes capacitados</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">+300</div>
+            <div class="stat-label">Colegios acompañados</div>
+          </div>
+        </div>
+      </div>
+      </section><!-- termina hero-->
+
+      <section id="proyectos" class="projects container">
+      <h2>Proyectos en Mexico</h2>
+      <p class="lead">Llevamos la salud y bien estar a diferentes regiones. Explora algunos de nuestros proyectos:</p>
+
+      <div class="project-cards">
+        <article class="card">
+          <div class="card-img" id="Adopta-un-abuelo"></div>
+          <div class="card-body">
+            <h3>Fundación Alma-Programa “Adopta un Abuelo”</h3>
+            <p>Acompañamiento y apoyo emocional a mayores</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="INAPAM"></div>
+          <div class="card-body">
+            <h3>INAPAM - Centros de Atención Integral para Personas Adultas Mayores</h3>
+            <p>Actividades, salud y recreación para mayores.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img" id="Fundación"></div>
+          <div class="card-body">
+            <h3>Fundación Dr. Simi – “Programa de Asistencia Social para Adultos Mayores”</h3>
+            <p> Medicinas y ayuda social a ancianos.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <section id="contacto" class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>¡No te pierdas lo último!</h2>
+          <p>Suscríbete para recibir noticias e historias.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <input id="email" type="email" placeholder="Tu correo electrónico" required />
+          <button class="btn primary" type="submit">Suscribirme</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+      </div>
+    </section>
+
+
+</main>
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Sobre la fundación</h4>
+        <p>En busca de la salud y las oportunidades para adultos mayores.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#quienes">Quiénes somos</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <address>
+           Cerro de las Campanas 98, San Andres Atenco, 54040 .<br/>Tlalnepantla, Méx<br/>
+          <a href="mailto:ancianalol@outlook.com">ancianaslol@outlook.com</a>
+        </address>
+      </div>
+    </div>
+
+ <div class="footer-social">
+    <div class="container social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+     
+    </div>
+  </div>
+  
+    <div class="footer-bottom">
+      <div class="container">© <span id="anio"></span> Fundación Ancianas LOL</div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
+
+
+<!--Como conclicion el https es el codio base donde se programan cosas y se preparara la pagina, con difrentes partes que se profundizan y se codifocan para que el orden tenga coherencia,
+se me complico el hecho de poder como meter los codigos y el hecho de que me perdi un poco de la clase ya que mi computadora se trabo casi toda la clase, 
+ponerme al corriente fue un problema pero con ayuda de mis compañeros me puder poner al cortriente y acabar-->

@@ -1,0 +1,326 @@
+/* Estilos generales para el diseño*/
+
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family:"Oswald", sans-serif;
+}
+
+/*scroll para que el desplazamiento sea suave*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #fffafa;
+    background-color: #b6bb6e;
+}
+
+.container{ 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* HEADER */
+.header {
+    background:#556321;
+  border-bottom:1px solid #e5e7eb;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+
+
+.header-inner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0.75rem 0;
+}
+.inicio ul {
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  margin:0;
+  padding:0;
+  align-items:center;
+}
+.inicio a {color:#fcfcfc; text-decoration:none; font-weight:500;}
+.inicio a:hover {color: #ecf0ef;
+}
+.btn-dona {
+  background:#3ac03a;
+  color:#fff;
+  padding:0.4rem 0.7rem;
+  border-radius:8px;
+}
+
+/* Stats */
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.stat {
+  flex: 0 1 140px;
+  background: rgba(31, 168, 31, 0.15);
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(45, 182, 98, 0.2);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3bc029;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #b5ff3d;
+  opacity: 0.95;
+}
+
+/* HERO VIDEO */
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(176, 217, 79, 0.6), rgba(52, 153, 42, 0.4));
+  z-index: 1;
+}
+
+
+.hero-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, (orange), (#b6bb6e));
+  color: #fff;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 107, 60, 0.3);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+}
+
+.btn.outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Projects */
+.projects {
+  padding:3rem 0;
+}
+
+.lead {
+  color:var(--muted);
+}
+
+.project-cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.card {
+  background:#194723;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  overflow:hidden;
+  transition:transform .2s;
+}
+
+.card:hover {
+  transform:translateY(-4px);
+}
+
+.card-img {
+  height:120px;
+  background:linear-gradient(135deg,(#364e0a),(#1b746c));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000000;
+  font-weight:600;
+}
+
+.card-body {
+  padding:1rem;
+}
+
+.card-body h3 {
+  margin:0 0 0.4rem;
+}
+
+.card-body p {
+  color:var(--muted);
+  margin:0;
+}
+
+#Adopta-un-abuelo {
+  background-image: url("../IMG/trabajar-con-personas-mayores-ancianos-residencia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#INAPAM{
+  background-image: url("../IMG/trabajar-con-personas-mayores-ancianos-rsidencia-la-zarzuela.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#Fundación{
+  background-image: url("../IMG/9ezYq940xfMhIZh9iiFkCOPO8Scltg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Newsletter */
+.newsletter {
+  padding:2rem 0;
+  background:linear-gradient(90deg, #364e0a 60%, #1b746c 40%);
+  color:#33ad93;
+}
+.newsletter-inner {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+.subscribe-form {display:flex; gap:0.5rem;}
+.subscribe-form input {
+  padding:0.6rem 0.8rem;
+  border-radius:8px;
+  border:none;
+  outline:none;
+}
+.form-message {margin-top:0.6rem;}
+
+/* Footer */
+.site-footer {
+  background:#526131;
+  border-top:1px solid #b5cf58;
+  color:#f5f5f5;
+  margin-top:3rem;
+}
+.footer-inner {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  padding:2rem 0;
+}
+
+.footer-social {
+  padding: 1.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icons a {
+  color: #fafafa;
+  border: 1.5px solid #000000;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  border-color:#ffffff;
+  color: #00ff2a;
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align:center;
+  padding:0.75rem 0;
+  color:#ffffff;
+  font-size:0.9rem;
+}
+
+/* Responsive */
+@media(max-width:800px) {
+  .hero-text h1 {font-size:2rem;}
+  .stats-grid {justify-content:center;}
+  .main-nav {display:none; position:absolute; top:64px; right:1rem; background:#fff; padding:.5rem; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.1);}
+  .main-nav ul {flex-direction:column; gap:0;}
+  .menu-toggle {display:block;}
+}
+
+/* en conclusion el header es la el encabezado lo que nos mustra la primera impresion de nuestra pagina donde esta el logo y asi, 
+el herovideo es el video el newstetter es la parte medi donde estan las cosas del donacion y el footer es donde esta la info de contacto   
+ se me complico mucho poner el orden de las cosas como queria y los colores que queria poner para que convinaran 
+y al mismo toiempo que la letra fuera legible */
